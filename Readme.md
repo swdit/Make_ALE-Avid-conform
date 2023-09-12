@@ -14,6 +14,7 @@ This is primarily targeted to ALE's that have been generated in third party tool
 Plenty versions of AMC will crash if an ALE with more than 250 characters, in one Metadata field, is imported.
 This script will find those fields, cut them down to 247 characters, and attach the suffix "..."; to give a hint that data had to be cut off.
 
+
 2. German-Umlaut
 Plenty Version of AMC struggle with special german characters like "ö, ä, ü, ß".
 This script will address the German umlauts by writing them out without any special characters.
