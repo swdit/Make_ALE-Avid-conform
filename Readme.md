@@ -2,9 +2,8 @@
 
 
 
-<div style="color: red; font-weight: bold; border: 2px solid red; padding: 10px;">
-  No operational version yet available - Project in early stage
-</div>
+> No operational version yet available - Project in early stage
+
 
 This Python-Script will check an ALE file (AvidLogExchange) for known issues that might cause problems when imported into Avid-Media-Composer (AMC) and fix them:
 This is primarily targeted to ALE's that have been generated in third party tools (Silverstack, DaVinci-Resolve...) and not by Avid-Software.
