@@ -1,0 +1,8 @@
+# Ignoriere den .idea Ordner
+.idea/
+
+# Ignoriere alle .log Dateien
+*.log
+
+# Ignoriere die Datei secret_config.py
+.DS_Store
