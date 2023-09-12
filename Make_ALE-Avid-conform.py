@@ -15,8 +15,8 @@ This script will fix those.
 
 Issue missing?
 Feel free to get in touch via github to request further ALE-conforming
-=>
+=> https://github.com/swdit/Make_ALE-Avid-conform/issues
 """
 
 
-import timecode
+import pandas
