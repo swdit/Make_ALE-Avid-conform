@@ -1,8 +1,15 @@
-# Ignoriere den .idea Ordner
+# Ignore .idea folder
 .idea/
 
-# Ignoriere alle .log Dateien
+# Ignore  .log files
 *.log
 
-# Ignoriere die Datei secret_config.py
+# Ignore file secret_config.py
 .DS_Store
+
+# Ignore INT
+Make_ALE-Avid-conform.py
+
+# Ignore Test Files folder
+Test-Files/
+

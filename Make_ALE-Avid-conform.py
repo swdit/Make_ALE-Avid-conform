@@ -19,4 +19,39 @@ Feel free to get in touch via github to request further ALE-conforming
 """
 
 
-import pandas
+import ALE_Parser as alp # custom modul can be found here https://github.com/swdit/ALE-Parser.git
+
+# Path to ALE file <- Change this to your ALE file
+ale_path = "your/path/testfile.ale"
+dst_pathname = "your/path/newfile.ale"
+
+# Read your ale file into a pandas dataframe and a headerdict
+headerdict, df = alp.ale_read_parser(ale_path)
+
+
+# Replace German Umlauts in all fields
+df = df.replace({'Ä': 'Ae'})
+df = df.replace({'ä': 'ae'})
+df = df.replace({'Ö': 'Oe'})
+df = df.replace({'ö': 'oe'})
+df = df.replace({'Ü': 'Ue'})
+df = df.replace({'ü': 'ue'})
+df = df.replace({'ß': 'ss'})
+
+
+# Limit Number of characters per field to 250
+def limit_characters(value):
+    if isinstance(value, str):
+        if len(value) > 250:
+            return value[:247] + "..."
+        else:
+            return value
+    else:
+        return value
+
+df = df.applymap(limit_characters)
+
+
+# Write your pandas dataframe to an ALE file
+alp.ale_write_parser(df, headerdict, dst_pathname)
+
