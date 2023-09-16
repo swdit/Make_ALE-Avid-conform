@@ -31,6 +31,7 @@ This script will address the German umlauts by writing them out without any spec
 
 2. Install dependencies
 - Pandas `pip install pandas`
+- ALE_Parser `https://github.com/swdit/ALE-Parser.git`
 
 ### Usage
 
